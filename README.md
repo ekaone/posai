@@ -1,4 +1,4 @@
-# NextJS Template
+# Point of sale AI-Powered
 
 ## Features
 
