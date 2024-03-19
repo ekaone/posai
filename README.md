@@ -1,5 +1,7 @@
 # Point of sale AI-Powered
 
+## WIP 🚧
+
 ## Features
 
 - [Shadcn UI](https://ui.shadcn.com/)
