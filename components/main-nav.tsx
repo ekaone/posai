@@ -26,7 +26,10 @@ export function MainNav({ items }: MainNavProps) {
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <div className='flex items-center space-x-2'>
           <SheetTrigger>
-            <Icons.menu className='h-5 w-5' onClick={() => setIsOpen(true)} />
+            <Icons.menu
+              className='h-5 w-5'
+              onClick={prev => setIsOpen(!prev)}
+            />
             <span className='sr-only'>Menu Icon</span>
           </SheetTrigger>
           <SheetContent side={'left'}>
@@ -36,11 +39,15 @@ export function MainNav({ items }: MainNavProps) {
           </SheetContent>
         </div>
       </Sheet>
+
+      {/**
+       * Optional navigation pages
+       */}
       {items?.length ? (
         <nav className='flex gap-6'>
           {items?.map(
             (item, index) =>
-              item.href && (
+              item.isView && (
                 <Link
                   key={index}
                   href={item.href}

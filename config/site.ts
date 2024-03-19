@@ -5,8 +5,14 @@ export const siteConfig = {
   description: 'NextJS Template',
   mainNav: [
     {
+      title: 'Home',
+      href: '/',
+      isView: false
+    },
+    {
       title: 'Contact',
-      href: '/contact'
+      href: '/contact',
+      isView: false
     }
   ],
   links: {
