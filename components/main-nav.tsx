@@ -41,13 +41,13 @@ export function MainNav({ items }: MainNavProps) {
       </Sheet>
 
       {/**
-       * Optional navigation pages
+       * Optional for navigation pages
        */}
       {items?.length ? (
         <nav className='flex gap-6'>
           {items?.map(
             (item, index) =>
-              item.isView && (
+              item.isActive && (
                 <Link
                   key={index}
                   href={item.href}

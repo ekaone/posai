@@ -3,5 +3,5 @@ export interface NavItem {
   href: string
   disabled?: boolean
   external?: boolean
-  isView?: boolean
+  isActive?: boolean
 }

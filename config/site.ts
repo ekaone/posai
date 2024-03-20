@@ -7,12 +7,12 @@ export const siteConfig = {
     {
       title: 'Home',
       href: '/',
-      isView: false
+      isActive: false
     },
     {
       title: 'Contact',
       href: '/contact',
-      isView: false
+      isActive: false
     }
   ],
   links: {
