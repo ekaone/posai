@@ -15,6 +15,7 @@ import { Icons } from '@/components/icons'
 import { MainNav } from '@/components/main-nav'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Cart } from '@/components/cart'
+import { InputSearch } from '@/components/input-search'
 
 export function SiteHeader() {
   return (
@@ -25,11 +26,11 @@ export function SiteHeader() {
             <MainNav items={siteConfig.mainNav} />
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Input type='text' placeholder='Search' />
+            <InputSearch placeholder='Search items' />
           </NavigationMenuItem>
           <NavigationMenuItem className='flex space-x-2'>
             <Cart items={8} />
-            <ThemeToggle isActive={false} />
+            <ThemeToggle isActive={true} />
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
